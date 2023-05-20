@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreca.Domain", "Foreca.Domain\Foreca.Domain.csproj", "{4A2E9FD1-4778-4A04-8E3C-5AF5C886C9DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreca.Infrastructure", "Foreca.Infrastructure\Foreca.Infrastructure.csproj", "{FC2A9F84-816C-482C-AE91-2DA90868E3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreca.Shared", "Foreca.Shared\Foreca.Shared.csproj", "{1B679C14-A913-4BFD-A3CA-280E71C0D40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreca.App.Api", "Foreca.App.Api\Foreca.App.Api.csproj", "{041AB340-97FE-474C-8D62-00817871A22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreca.App", "Foreca.App\Foreca.App.csproj", "{91E650E7-F62D-4248-99F0-9CE951D5C268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreca.Infrastructure.Database", "Foreca.Infrastructure.Database\Foreca.Infrastructure.Database.csproj", "{D1AAD4E9-BE9A-4CE4-91C1-C82B3676D096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreca.App.Web", "Foreca.App.Web\Foreca.App.Web.csproj", "{AB3963D0-167F-4C3E-AF3A-6F1B4AAF4167}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{2CACAE16-EDA3-4917-8A71-2576971C61BE}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A2E9FD1-4778-4A04-8E3C-5AF5C886C9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2E9FD1-4778-4A04-8E3C-5AF5C886C9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2E9FD1-4778-4A04-8E3C-5AF5C886C9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2E9FD1-4778-4A04-8E3C-5AF5C886C9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2A9F84-816C-482C-AE91-2DA90868E3E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2A9F84-816C-482C-AE91-2DA90868E3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2A9F84-816C-482C-AE91-2DA90868E3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2A9F84-816C-482C-AE91-2DA90868E3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B679C14-A913-4BFD-A3CA-280E71C0D40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B679C14-A913-4BFD-A3CA-280E71C0D40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B679C14-A913-4BFD-A3CA-280E71C0D40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B679C14-A913-4BFD-A3CA-280E71C0D40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041AB340-97FE-474C-8D62-00817871A22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041AB340-97FE-474C-8D62-00817871A22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041AB340-97FE-474C-8D62-00817871A22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041AB340-97FE-474C-8D62-00817871A22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E650E7-F62D-4248-99F0-9CE951D5C268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E650E7-F62D-4248-99F0-9CE951D5C268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E650E7-F62D-4248-99F0-9CE951D5C268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E650E7-F62D-4248-99F0-9CE951D5C268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AAD4E9-BE9A-4CE4-91C1-C82B3676D096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AAD4E9-BE9A-4CE4-91C1-C82B3676D096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AAD4E9-BE9A-4CE4-91C1-C82B3676D096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AAD4E9-BE9A-4CE4-91C1-C82B3676D096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB3963D0-167F-4C3E-AF3A-6F1B4AAF4167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB3963D0-167F-4C3E-AF3A-6F1B4AAF4167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB3963D0-167F-4C3E-AF3A-6F1B4AAF4167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB3963D0-167F-4C3E-AF3A-6F1B4AAF4167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

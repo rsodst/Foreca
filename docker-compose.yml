@@ -1,0 +1,68 @@
+services:
+  weather-app-api:
+    container_name: weather-app-api
+    environment:
+      - ConnectionStrings__ForecaContext=User ID=designer;Password=swordfish;Host=postgres_container;Port=5432;Database=ForecaApp;Pooling=true;
+      - YandexWeatherOptions__ApiKey=2e3bd0d2-fd9f-4e83-b5a4-1e8cdeee96b0
+      - YandexWeatherOptions__BaseUrl=https://api.weather.yandex.ru
+      - YandexGeocoderOptions__ApiKey=0f3ea225-6599-4d0a-bf81-5631a173e858
+      - YandexGeocoderOptions__BaseUrl=https://geocode-maps.yandex.ru
+      - UnsplashProviderOptions__AccessKey=ayOUzcvvgF6H5xPGMyLUNUtQ6A33K02eAxDAGa70zDc
+      - UnsplashProviderOptions__BaseUrl=https://api.unsplash.com
+    build: 
+      context: .
+      dockerfile: ./Foreca.App.Api/Dockerfile
+    networks:
+      - weather-app-network
+    ports:
+      - "4430:80"
+      
+  weather-app-web:
+    container_name: weather-app-web
+    build: 
+      context: .
+      dockerfile: ./Foreca.App.Web/Dockerfile
+    networks:
+      - weather-app-network
+    ports:
+      - "4431:80"
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: designer
+      POSTGRES_PASSWORD: swordfish
+      PGDATA: /data/postgres
+    volumes: 
+    - postgres:/data/postgres
+    ports: 
+    - 5432:5432
+    networks:
+    - weather-app-network
+    restart: unless-stopped
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: designer@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: swordfish
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+    - pgadmin:/var/lib/pgadmin
+    ports:
+    - 5050:80
+    networks:
+    - weather-app-network
+    restart: unless-stopped
+
+volumes:
+ postgres:
+  driver: local
+ pgadmin:
+  driver: local
+
+networks:
+  weather-app-network:
+    driver: bridge
+

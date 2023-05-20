@@ -1,0 +1,24 @@
+{
+   "ConnectionStrings": {
+       "ForecaContext": "!!CONFIGURE!!"
+   },
+   "YandexWeatherOptions": {
+       "ApiKey": "!!CONFIGURE!!",
+       "BaseUrl": "!!CONFIGURE!!"
+   },
+   "YandexGeocoderOptions": {
+       "ApiKey": "!!CONFIGURE!!",
+       "BaseUrl": "!!CONFIGURE!!"
+   },
+   "UnsplashProviderOptions": {
+       "AccessKey": "!!CONFIGURE!!",
+       "BaseUrl": "!!CONFIGURE!!"
+   },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
